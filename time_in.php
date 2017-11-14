@@ -5,12 +5,11 @@
 
 <form id="form" action="timein_action.php" method="post" >
 <input type="text" id="serial_num" name="serial_num"  placeholder="Serial Number"/>
-
-<input type="submit" name="submit" />
+</form>
   
   <script>
     
-    $('#serial_num).on('input', function(){
+    $('#serial_num').on('input', function(){
       $('#form').submit();
       });
     
