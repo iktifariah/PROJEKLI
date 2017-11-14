@@ -65,10 +65,9 @@ CREATE TABLE `card` (
 
 CREATE TABLE `timestamp` (
   `time_id` int(11) NOT NULL,
-  `user_ic` varchar(15) NOT NULL,
   `serial_num` varchar(15) NOT NULL,
-  `time_in` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `time_out` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `status` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
